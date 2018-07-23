@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+
+	<logger name="org.hibernate.type" level="TRACE" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+	<logger name="org.hibernate.SQL" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="POLLER_LOG_FILE" />
+	</logger>
+	
+	<logger name="com.stu.sps.ems.sim" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="SIMUlATOR_LOG_FILE" />
+	</logger>
+	
+	<logger name="com.stu.sps.ems.manager" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="MANAGER_LOG_FILE" />
+	</logger>
+	
+	<logger name="com.stu.sps.ems.poller" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="POLLER_LOG_FILE" />
+	</logger>
+	
+	<logger name="com.stu.sps.ems.agent" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="AGENT_LOG_FILE" />
+	</logger>
+	
+	<logger name="com.stu.sps.ems.micro" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="MICROC_LOG_FILE" />
+	</logger>
+	
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</included>
+
